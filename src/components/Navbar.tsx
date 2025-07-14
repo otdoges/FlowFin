@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Logo and Brand */}
         <div className="flex items-center gap-7">
           <div className="flex items-center gap-3">
-            <h1 className="text-white text-lg font-semibold leading-7 font-sans">Webfluin</h1>
+            <h1 className="text-white text-lg font-semibold leading-7 font-sans">FlowFin</h1>
           </div>
           
           {/* Vertical Divider - Hidden on mobile */}
