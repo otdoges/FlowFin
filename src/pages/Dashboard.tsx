@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Plus, Download, Eye, Trash2, Settings, Users, Zap, Cube } from 'lucide-react';
+import { Plus, Download, Eye, Trash2, Settings, Users, Zap, Box } from 'lucide-react';
 
 const Dashboard = () => {
   const containerVariants = {
@@ -24,8 +24,7 @@ const Dashboard = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
-        ease: [0.4, 0, 0.2, 1]
+        duration: 0.5
       }
     }
   };
@@ -66,7 +65,7 @@ const Dashboard = () => {
   ];
 
   const stats = [
-    { label: "Models Created", value: "127", icon: Cube, color: "text-blue-500" },
+    { label: "Models Created", value: "127", icon: Box, color: "text-blue-500" },
     { label: "Processing", value: "3", icon: Zap, color: "text-yellow-500" },
     { label: "Downloads", value: "1.2k", icon: Download, color: "text-green-500" },
     { label: "Team Members", value: "5", icon: Users, color: "text-purple-500" }

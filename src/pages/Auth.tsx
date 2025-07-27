@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Eye, EyeOff, Github, Mail, Cube } from 'lucide-react';
+import { Eye, EyeOff, Github, Mail, Box } from 'lucide-react';
 
 const Auth = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -28,8 +28,7 @@ const Auth = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
-        ease: [0.4, 0, 0.2, 1]
+        duration: 0.5
       }
     }
   };
@@ -92,7 +91,7 @@ const Auth = () => {
         <motion.div variants={itemVariants} className="text-center mb-8">
           <div className="flex items-center justify-center mb-4">
             <div className="p-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl">
-              <Cube className="w-8 h-8 text-white" />
+              <Box className="w-8 h-8 text-white" />
             </div>
           </div>
           <h1 className="text-3xl font-bold text-white mb-2">Prompt Pix</h1>
@@ -157,7 +156,7 @@ const Auth = () => {
                           animate={{ rotate: 360 }}
                           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                         >
-                          <Cube className="w-4 h-4 mr-2" />
+                          <Box className="w-4 h-4 mr-2" />
                         </motion.div>
                       ) : null}
                       {isLoading ? 'Signing In...' : 'Sign In'}
@@ -226,7 +225,7 @@ const Auth = () => {
                           animate={{ rotate: 360 }}
                           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                         >
-                          <Cube className="w-4 h-4 mr-2" />
+                          <Box className="w-4 h-4 mr-2" />
                         </motion.div>
                       ) : null}
                       {isLoading ? 'Creating Account...' : 'Create Account'}
