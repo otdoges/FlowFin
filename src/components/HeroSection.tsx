@@ -65,13 +65,13 @@ const HeroSection = () => {
                 className="w-full text-center text-white text-3xl md:text-5xl lg:text-6xl font-normal leading-tight md:leading-none break-words font-sans"
                 variants={itemVariants}
               >
-                Enhance your financial<br />control with FlowFin
+                Create stunning 3D models<br />with Prompt Pix AI
               </motion.h1>
               <motion.p 
                 className="w-full text-center text-white text-base md:text-lg font-normal leading-relaxed break-words font-sans"
                 variants={itemVariants}
               >
-                Streamline your business's financial management with our intuitive, scalable SaaS platform. Designed for U.S. enterprises.
+                Transform your ideas into professional 3D models using cutting-edge AI technology. Perfect for designers, architects, and creators.
               </motion.p>
             </motion.div>
             
@@ -80,9 +80,11 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row justify-start items-center gap-4"
               variants={itemVariants}
             >
-              <Button className="px-6 py-3 bg-white text-black rounded-full border border-white hover:bg-gray-100 transition-colors font-normal text-base leading-6 font-sans">
-                Get started
-              </Button>
+              <a href="/auth">
+                <Button className="px-6 py-3 bg-white text-black rounded-full border border-white hover:bg-gray-100 transition-colors font-normal text-base leading-6 font-sans">
+                  Get started
+                </Button>
+              </a>
               <Button variant="outline" className="px-6 py-3 bg-transparent text-white rounded-full border border-white hover:bg-white hover:text-black transition-colors font-normal text-base leading-6 font-sans">
                 Contact
               </Button>

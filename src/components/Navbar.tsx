@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Logo and Brand */}
         <div className="flex items-center gap-7">
           <div className="flex items-center gap-3">
-            <h1 className="text-white text-lg font-semibold leading-7 font-sans">FlowFin</h1>
+            <h1 className="text-white text-lg font-semibold leading-7 font-sans">Prompt Pix</h1>
           </div>
           
           {/* Vertical Divider - Hidden on mobile */}
@@ -40,20 +40,22 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex flex-1 justify-between items-center gap-8">
             {navItems.map(item => (
-              <button key={item.name} className="px-2.5 py-2 text-sm leading-5 font-sans text-white transition-opacity hover:opacity-80 font-normal">
+              <a key={item.name} href={item.name === 'Features' ? '/' : `/${item.name.toLowerCase().replace(' ', '-')}`} className="px-2.5 py-2 text-sm leading-5 font-sans text-white transition-opacity hover:opacity-80 font-normal">
                 {item.name}
-              </button>
+              </a>
             ))}
           </div>
         </div>
 
         {/* Get Started Button - Desktop */}
         <div className="hidden lg:block">
-          <Button className="px-4 py-2.5 text-sm font-semibold leading-5 text-white rounded-xl border border-white/32 font-sans" style={{
-            background: 'linear-gradient(180deg, #6445F5 0%, #4128BA 100%)'
-          }}>
-            Get Started
-          </Button>
+          <a href="/auth">
+            <Button className="px-4 py-2.5 text-sm font-semibold leading-5 text-white rounded-xl border border-white/32 font-sans" style={{
+              background: 'linear-gradient(180deg, #6445F5 0%, #4128BA 100%)'
+            }}>
+              Get Started
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu */}
